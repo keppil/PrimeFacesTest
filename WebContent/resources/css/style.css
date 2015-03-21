@@ -1,0 +1,7 @@
+#topDiv {
+	height: 200px;
+}
+
+#blinkForm>* {
+	display: block;
+}

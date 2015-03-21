@@ -4,22 +4,18 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:p="http://primefaces.org/ui">
-<h:head>
-	<title>Column toggler</title>
-</h:head>
+<h:head />
 <h:body>
 	<h:form>
 		<p:dataTable id="cars" var="car" value="#{dtBasicView.cars}">
 			<f:facet name="header">
-        List of Cars
- 
-        <p:commandButton value="Press me for blinking"
+        		List of Cars
+ 		        <p:commandButton value="Press me for blinking column list"
 					style="float:left" update="@form" />
 				<p:commandButton id="toggler" type="button" value="Columns"
 					style="float:right" icon="ui-icon-calculator" />
 				<p:columnToggler datasource="cars" trigger="toggler" />
 			</f:facet>
-
 
 			<p:column headerText="Id">
 				<h:outputText value="#{car.id}" />

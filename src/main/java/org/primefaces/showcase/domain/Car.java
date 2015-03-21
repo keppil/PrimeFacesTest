@@ -1,7 +1,10 @@
 package org.primefaces.showcase.domain;
 
-public class Car {
+import java.io.Serializable;
 
+public class Car implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private String id;
 	private String brand;
 	private int year;
