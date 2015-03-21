@@ -1,5 +1,6 @@
 package org.primefaces.showcase.service;
  
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -12,9 +13,11 @@ import org.primefaces.showcase.domain.Car;
  
 @ManagedBean(name = "carService")
 @ApplicationScoped
-public class CarService {
-     
-    private final static String[] colors;
+public class CarService  implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private final static String[] colors;
      
     private final static String[] brands;
      
